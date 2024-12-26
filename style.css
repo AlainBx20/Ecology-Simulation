@@ -1,0 +1,88 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+/* Canvas Container */
+.canvas-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/* Canvas Styling */
+#ecosystemCanvas {
+  border: 2px solid #4caf50;
+  background-color: #e8f5e9;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Controls Section */
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:disabled {
+  background-color: #b5e3b5;
+  cursor: not-allowed;
+}
+
+/* Title and Instructions */
+h1 {
+  font-size: 36px;
+  color: #388e3c;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  color: #555;
+  text-align: center;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #ecosystemCanvas {
+    width: 100%;
+    height: auto;
+  }
+
+  .controls {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
