@@ -14,7 +14,7 @@ JavaScript: For the simulation logic, agent movement, and interaction with the e
 How to Run
 Clone the repository:
 
-bash
+to clone :
 git clone https://github.com/AlainBx20/Ecology-Simulation.git
 Open the project in your browser:
 
